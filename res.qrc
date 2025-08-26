@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/new">
+        <file>pixmap/background.jpg</file>
+        <file>pixmap/player1.png</file>
+        <file>music/bg_music1.wav</file>
+        <file>pixmap/player1_.png</file>
+        <file>pixmap/fish_lv1.png</file>
+        <file>pixmap/fish_lv2.png</file>
+        <file>pixmap/fish_lv3.png</file>
+        <file>pixmap/fish_lv1_.png</file>
+        <file>pixmap/fish_lv2_.png</file>
+        <file>pixmap/fish_lv3_.png</file>
+        <file>pixmap/fish_lv4.png</file>
+        <file>pixmap/fish_lv4_.png</file>
+        <file>pixmap/fish_lv5.png</file>
+        <file>pixmap/fish_lv5_.png</file>
+        <file>pixmap/fish_lv6.png</file>
+        <file>pixmap/fish_lv6_.png</file>
+        <file>pixmap/fish_lv7.png</file>
+        <file>pixmap/fish_lv7_.png</file>
+        <file>pixmap/fish_lv8.png</file>
+        <file>pixmap/fish_lv8_.png</file>
+        <file>music/player_getscore1.wav</file>
+        <file>pixmap/icon1.png</file>
+        <file>music/bg_music2.wav</file>
+        <file>music/player_getscore2.wav</file>
+        <file>music/player_loselife.wav</file>
+    </qresource>
+</RCC>
