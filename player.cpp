@@ -3,13 +3,12 @@
 #include <QDebug>
 #include <QTimer>
 #include <QWidget>
-#include <QMainWindow>
 #include <QRect>
 #include <QGraphicsEllipseItem>
 #include <cmath>
 #include <config.h>
 
-Player::Player(QMainWindow * game)
+Player::Player(QWidget* game)
 {
     m_Score = 0;//人物分数
     wid = player_Width;//人物宽度
@@ -26,6 +25,7 @@ Player::Player(QMainWindow * game)
     right = false;//是否向右
     towards = true;//朝向(真为向左)
     protection = false;//扣血保护(真为受保护状态)
+    blinkCount = 0;//闪烁计数器初始化
 
 }
 

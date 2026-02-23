@@ -5,7 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
-QT       += multimedia
+QT       += multimedia multimediawidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -29,21 +29,26 @@ CONFIG += resources_big
 SOURCES += \
         main.cpp \
         startscene.cpp \
-    choosescene.cpp \
-    player.cpp \
-    playscene.cpp \
-    fish.cpp
+        choosescene.cpp \
+        player.cpp \
+        playscene.cpp \
+        fish.cpp \
+        basescene.cpp \
+        scenemanager.cpp \
+        audiomanager.cpp \
+        mainwindow.cpp
 
 HEADERS += \
         startscene.h \
-    choosescene.h \
-    player.h \
-    playscene.h \
-    fish.h \
-    config.h
-
-FORMS += \
-        startscene.ui
+        choosescene.h \
+        player.h \
+        playscene.h \
+        fish.h \
+        config.h \
+        basescene.h \
+        scenemanager.h \
+        audiomanager.h \
+        mainwindow.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

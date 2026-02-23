@@ -17,7 +17,7 @@
 #define player_Speed 3 //玩家速度
 
 /*数据设置*/
-#define fish_Speed 2 //鱼速度
+#define fish_Speed 1 //鱼速度（降低速度以减少卡顿）
 #define maxnum_fish 10 //鱼的最大数目
 #define fish_recordor 3000 //产生鱼的间隔
 #define per_turn 5 //分数转化率倒数
@@ -40,11 +40,10 @@
 #define fish_Lv8_Pix ":/new/pixmap/fish_lv8.png"   //lv8鱼向左图
 #define fish_Lv8_Pix_ ":/new/pixmap/fish_lv8_.png" //lv8鱼向右图
 
-/*背景音乐及音效*/
+/*背景音乐及音效 - 使用资源路径*/
 #define bg_music1 ":/new/music/bg_music1.wav" //背景音乐1
 #define bg_music2 ":/new/music/bg_music2.wav" //背景音乐2
-#define player_getscore1 ":/new/music/player_getscore1.wav" //得分音效1
-#define player_getscore2 ":/new/music/player_getscore2.wav" //得分音效2
+#define player_getscore ":/new/music/player_getscore1.wav" //得分音效
 #define player_loselife ":/new/music/player_loselife.wav" //扣血音效
 
 #endif // CONFIG_H

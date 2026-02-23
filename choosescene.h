@@ -1,26 +1,26 @@
 #ifndef CHOOSESCENE_H
 #define CHOOSESCENE_H
 
-#include <QMainWindow>
-#include "playscene.h"
+#include "basescene.h"
 
-class ChooseScene : public QMainWindow
+// 选择场景（单人/双人选择）
+class ChooseScene : public BaseScene
 {
     Q_OBJECT
+
 public:
-    explicit ChooseScene(QWidget *parent = nullptr);
+    explicit ChooseScene(SceneManager* manager, QWidget* parent = nullptr);
+    ~ChooseScene() override;
 
-    PlayScene * playscene;
+    // 场景生命周期
+    void onEnter() override;
+    void onExit() override;
 
-    //重写绘图事件
-    void paintEvent(QPaintEvent *);
+    // 重写绘图事件
+    void paintEvent(QPaintEvent*) override;
 
-signals:
-    //返回开始界面
-    void backStart();
-
-public slots:
-
+private:
+    void setupConnections();
 };
 
 #endif // CHOOSESCENE_H

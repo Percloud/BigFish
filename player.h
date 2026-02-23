@@ -2,7 +2,7 @@
 #define PLAYER_H
 
 #include <QObject>
-#include <QMainWindow>
+#include <QWidget>
 #include <QKeyEvent>
 #include <QPainter>
 #include <QTimer>
@@ -15,7 +15,7 @@ class Player : public QObject
 {
     Q_OBJECT
 public:
-    Player(QMainWindow * game = nullptr);
+    Player(QWidget* game = nullptr);
 
     int m_Score;//任务分数
     double x;//人物横坐标
@@ -32,6 +32,7 @@ public:
     bool right;//是否向右
     bool towards;//朝向(真为向左)
     bool protection;//扣血保护(真为受保护状态)
+    int blinkCount;//闪烁计数器(用于闪烁效果)
 
     QPixmap pix;//人物左向图
     QPixmap pix_;//人物右向图
